@@ -2,9 +2,9 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    /* background-image: url('/image/scattered-forcefields.svg');
+    background-image: url("https://wallpapercave.com/uwp/uwp2708166.jpeg");
     background-size:cover;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
 }
 
 span {
@@ -19,15 +19,7 @@ span {
 .not{
     text-decoration: underline;
 }
-
-
-
-
 /*login page*/
-body{
-    background-image: url("https://wallpapercave.com/uwp/uwp2708166.jpeg");
-}
-
 #container {
     width: 67%;
     margin: 0 auto 2% auto;
@@ -78,7 +70,7 @@ form {
 }
 
 #login .title>span {
-<<<<<<< HEAD
+
     font-size: .8em;
 }
 
@@ -103,8 +95,3 @@ form {
     cursor: pointer;
     color: lightgrey;
 }
-
-=======
-  
-}
->>>>>>> upstream/main
