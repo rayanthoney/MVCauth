@@ -10,6 +10,10 @@ const connectDB = require('./config/database')
 const mainRoutes = require('./routes/main')
 const todoRoutes = require('./routes/todos')
 
+// Favicon Icon
+const favicon = require('serve-favicon')
+const path = require('path')
+
 require('dotenv').config({path: './config/.env'})
 
 // Passport config
@@ -40,6 +44,9 @@ app.use(flash())
   
 app.use('/', mainRoutes)
 app.use('/todos', todoRoutes)
+
+// Favicon Route
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
  
 app.listen(process.env.PORT, ()=>{
     console.log('Server is running, you better catch it!')

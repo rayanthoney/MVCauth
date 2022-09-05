@@ -1,12 +1,4 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todos MVC | Login</title>
-</head>
-<body> -->
+
 
     <%-include('header')-%>
     
@@ -27,28 +19,22 @@
     <div class="text-center center-div" id="login">
         <div class="container w-25 border py-5">
             <div class="title pb-5">
-                 <h2 class="font-weight-bold">Login System</h2>
-                 <span>Log in for the existing user</span>
+                 <h2 class="font-weight-bold text-dark">Login System</h2>
+                 <span class="text-dark">Log in for the existing user</span>
             </div>
-            <form action="/login" method="POST" class="pt-3">
+            <form action="/login" method="POST" class="pt-3" id="login-form">
                 <div class="form-group">
-                    <input type="email" class="form-control" placeholder="email" name="email">
-                    <!-- <small class="form-text text-muted text-start"><a href="/signup">Register email address</a></small> -->
+                    <input type="email" class="form-control" placeholder="Email" name="email">
                 </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" name="password" placeholder="password">
+                <div class="form-group password-container">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Password...">
+                    <i class="fa-solid fa-eye-slash" id="show-password"></i>
                 </div>
                 <button type="submit" class="btn btn-success rounded-pill">Submit</button>
             </form>
         </div>
     </div>
 
-    <!-- <form action="/login" method="POST">
-        <input type="email" name="email" placeholder="Email">
-        <input type="password" name="password" placeholder="Password">
-        <input type="submit">
-    </form> -->
-
+    <script src="js/password.js"></script>
+    
     <%-include('footer')-%>
-<!-- </body>
-</html> -->

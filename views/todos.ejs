@@ -3,10 +3,10 @@
 <div class="text-center center-div" id="login">
     <div class="container w-25 border py-5">
         <div class="title pb-5">
-            <h2 class="font-weight-bold">My Web App Ideas</h2>
+            <h2 class="font-weight-bold">Login System</h2>
             <!-- <span>Log in for the existing user</span> -->
         </div>
-        <h1>Future Projects</h1>
+        <h1>Todos</h1>
         <ul>
         <% todos.forEach( el => { %>
                 <li class='todoItem' data-id='<%=el._id%>'>
@@ -16,16 +16,16 @@
         <% }) %>    
         </ul>
 
-        <h2><%= user.userName %> has <%= left %> project in the making.</h2>
+        <h2><%= user.userName %> has <%= left %> things left to do.</h2>
 
         <form action="/todos/createTodo" method='POST'>
-            <input type="text" placeholder="Enter App Idea" name='todoItem'>
+            <input type="text" placeholder="Enter Todo Item" name='todoItem'>
             <button type="submit" class="btn btn-success rounded-pill">Submit</button>
-        </form>
-    
-        <a href="/logout">Logout</a>          
-
-    </div>
+            <button type="submit" class="btn btn-success rounded-pill">
+                <a href="/logout">Logout</a>
+            </button>
+        </form>  
+     </div>
 </div>
 
 <script src="js/main.js"></script>

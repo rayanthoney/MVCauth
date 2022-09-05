@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-h1{
-    color: red;
-}
-
 body {
     font-family: 'Open Sans', sans-serif;
-    background-image: url('/assets/background-image.jpg');
+    /* background-image: url('/image/scattered-forcefields.svg');
     background-size:cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+}
+
+span {
+    cursor: pointer;
 }
 
 .completed{
@@ -49,3 +49,26 @@ form {
 #login .title>span {
     font-size: .8em;
 }
+
+/* ************************ */
+/* ** Password Show Hide ** */
+/* ************************ */
+#login-form input[type="password"],
+#login-form input[type="text"] {
+    width: 100%;
+    /* padding: 12px 36px 12px 12px; */
+    box-sizing: border-box;
+}
+
+.password-container {
+    position: relative;
+}
+
+.fa-eye-slash {
+    position: absolute;
+    top: 37%;
+    right: 8%;
+    cursor: pointer;
+    color: lightgrey;
+}
+
